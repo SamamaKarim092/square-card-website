@@ -6,6 +6,8 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import UpToDate from "./components/UpToDate";
+import Cards from "./components/Cards";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
       <Clients />
       <Features />
+      <UpToDate />
+      <Cards />
       <About />
       <Testimonials />
       <CTA />
