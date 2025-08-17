@@ -11,8 +11,8 @@ const Hero = () => {
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
             This Modern Bank Card Embraces The Era Of Contactless Payments, Enabling
-Swift And Effortless Transactions With Just A Tap Or Wave. No More Fumbling For
-Cash Or Struggling With Outdated Payment Methods.
+            Swift And Effortless Transactions With Just A Tap Or Wave. No More Fumbling For
+            Cash Or Struggling With Outdated Payment Methods.
           </p>
           <a
             href="#"
