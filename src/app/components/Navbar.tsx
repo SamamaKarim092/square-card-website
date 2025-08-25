@@ -1,39 +1,29 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import Logo from "./ui/logo";
 
 const Navbar = () => {
   const [isLearnOpen, setIsLearnOpen] = useState(false);
 
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        {/* Logo */}
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span className="ml-3 text-xl">Square Card</span>
+    <header className="text-gray-900 body-font">
+      <div className="max-w-screen-xl px-4 py-4 mx-auto flex items-center justify-between">
+        {/* Left: Logo */}
+        <a className="flex items-center">
+          <Logo color="black" className="h-8" />
+          <span className="ml-3 text-xl font-medium">Square Card</span>
         </a>
 
-        {/* Navigation */}
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center relative">
-          <a className="mr-7 hover:text-gray-900">Home</a>
+        {/* Center: Navigation */}
+        <nav className="hidden md:flex items-center text-base gap-7 relative">
+          <a className="hover:text-gray-900">Home</a>
 
           {/* Learn with dropdown */}
           <div className="relative">
             <button
               onClick={() => setIsLearnOpen(!isLearnOpen)}
-              className="mr-7 hover:text-gray-900 flex items-center"
+              className="hover:text-gray-900 flex items-center"
             >
               Learn
               <svg
@@ -70,14 +60,29 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          
-          <a className="mr-7 hover:text-gray-900">Help</a>
-          <a className="mr-7 hover:text-gray-900">Blog</a>
-          <a className="mr-7 hover:text-gray-900">About</a>
+
+          <a className="hover:text-gray-900">Help</a>
+          <a className="hover:text-gray-900">Blog</a>
+          <a className="hover:text-gray-900">About</a>
         </nav>
 
-        {/* Sign in button */}
-        <Button>Sign Up</Button>
+        {/* Right: Search + CTA */}
+        <div className="flex items-center gap-3">
+          <button aria-label="Search" className="p-2 rounded hover:bg-gray-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-5 h-5"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <Button>Sign Up</Button>
+        </div>
       </div>
     </header>
   );
