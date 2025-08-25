@@ -19,9 +19,9 @@ export default function Home() {
       <UpToDate />
       <Cards />
       <About />
+      <Footer />
       <Testimonials />
       <CTA />
-      <Footer />
     </>
   );
 }
