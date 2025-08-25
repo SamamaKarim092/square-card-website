@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -14,12 +15,7 @@ const Hero = () => {
             Swift And Effortless Transactions With Just A Tap Or Wave. No More Fumbling For
             Cash Or Struggling With Outdated Payment Methods.
           </p>
-          <a
-            href="#"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
-          >
-            Explore More
-          </a>
+          <Button>Explore More</Button>
         </div>
 
         {/* Optimized Image */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'   // ✅ Import Next.js Image
+import { Button } from "./ui/button";
 
 const Features = () => {
   return (
@@ -20,12 +21,7 @@ const Features = () => {
             <p className="mt-3 text-gray-600">
               We Made Every Effort To Ensure That You Have Access To A Comprehensive Range Of Global Banking Services. Our Aim Was To Provide You With A Seamless Banking Experience That Caters To Your Financial Needs Regardless Of Your Location.
             </p>
-            <a
-              href="#"
-              className="mt-6 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 transition"
-            >
-              Explore More
-            </a>
+            <Button className="mt-4">Explore More</Button>
           </div>
         </div>
 

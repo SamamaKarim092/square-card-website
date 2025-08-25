@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { scrollCarouselPrev, scrollCarouselNext } from "../components/carouselControl";
 
 const UpToDate = () => {
   return (
@@ -16,12 +18,12 @@ const UpToDate = () => {
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex items-center justify-center mr:10">
           <div className="flex gap-4">
             {/* Previous Button */}
-            <button className="px-6 py-2 rounded-lg bg-gray-200 text-gray-800 hover:bg-gray-300">
+            <button onClick={scrollCarouselPrev} className="px-6 py-2 rounded-lg bg-gray-200 text-gray-800 hover:bg-gray-300">
               Previous
             </button>
 
             {/* Forward Button */}
-            <button className="px-6 py-2 rounded-lg bg-green-300 text-white hover:bg-green-400">
+            <button onClick={scrollCarouselNext} className="px-6 py-2 rounded-lg bg-green-300 text-white hover:bg-green-400">
               Forward
             </button>
           </div>
