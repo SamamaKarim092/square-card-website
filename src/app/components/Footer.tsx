@@ -1,4 +1,12 @@
-import React from 'react';
+import React from "react";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaShareNodes,
+} from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import Logo from "./ui/logo";
 
 const Footer = () => {
   return (
@@ -22,34 +30,67 @@ const Footer = () => {
         </div>
 
         {/* Content area */}
-        <div className="relative z-10 pt-24 pb-16 px-8">
+        <div className="relative z-10 pt-24 pb-24 px-8">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
             {/* Left section - Brand */}
             <div className="space-y-6">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-white rounded"></div>
-                <span className="text-xl font-bold">Brand</span>
+                <Logo color="white" />
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
-                A Modern Design For A Modern World And Advanced Features For Your Convenience
+                A Modern Design For A Modern World And Advanced Features For
+                Your Convenience
               </p>
             </div>
-
             {/* Middle section - Quick Access */}
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">Quick Access</h3>
               <div className="grid grid-cols-2 gap-4 text-sm text-gray-300">
                 <div className="space-y-3">
-                  <a href="#" className="block hover:text-white transition-colors">About Us</a>
-                  <a href="#" className="block hover:text-white transition-colors">Services</a>
-                  <a href="#" className="block hover:text-white transition-colors">Careers</a>
-                  <a href="#" className="block hover:text-white transition-colors">Learn</a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    Careers
+                  </a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    Learn
+                  </a>
                 </div>
                 <div className="space-y-3">
-                  <a href="#" className="block hover:text-white transition-colors">Branches</a>
-                  <a href="#" className="block hover:text-white transition-colors">FAQ</a>
-                  <a href="#" className="block hover:text-white transition-colors">Blog</a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    Branches
+                  </a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    FAQ
+                  </a>
+                  <a
+                    href="#"
+                    className="block hover:text-white transition-colors"
+                  >
+                    Blog
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,7 +98,8 @@ const Footer = () => {
             {/* Right section - Newsletter */}
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">
-                To Know The Latest News And Updates, Enter Your Email So That We Can Contact You
+                To Know The Latest News And Updates, Enter Your Email So That We
+                Can Contact You
               </h3>
               <div className="flex">
                 <input
@@ -69,26 +111,48 @@ const Footer = () => {
                   Subscribe →
                 </button>
               </div>
-              
+
               {/* Social icons */}
-              <div className="flex space-x-4 pt-4">
-                <span className="text-sm text-gray-300">Contact Us:</span>
-                <div className="flex space-x-3">
-                  <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-                    <span className="text-sm">📧</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                    <span className="text-sm">🌐</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                    <span className="text-sm">🐦</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                    <span className="text-sm">📱</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                    <span className="text-sm">💼</span>
-                  </div>
+              <div className="flex items-center gap-4 pt-4">
+                <span className="text-sm text-gray-300 font-bold">
+                  Contact Us:
+                </span>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="#"
+                    aria-label="X (Twitter)"
+                    className="w-9 h-9 rounded-full border border-white/20 bg-gray-700 text-white hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    <FaXTwitter className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Instagram"
+                    className="w-9 h-9 rounded-full border border-white/20 bg-gray-700 text-white hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="LinkedIn"
+                    className="w-9 h-9 rounded-full border border-white/20 bg-gray-700 text-white hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    <FaLinkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Share"
+                    className="w-9 h-9 rounded-full border border-white/20 bg-gray-700 text-white hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    <FaShareNodes className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="GitHub"
+                    className="w-9 h-9 rounded-full border border-white/20 bg-gray-700 text-white hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -96,7 +160,7 @@ const Footer = () => {
         </div>
 
         {/* Decorative curved elements at bottom */}
-        <div className="absolute bottom-0 left-0 w-full mt-5">
+        <div className="absolute bottom-0 left-0 w-full">
           <svg
             className="w-full h-32"
             viewBox="0 0 1200 120"
@@ -104,21 +168,42 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
-              <pattern id="squares" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                <rect x="0" y="0" width="20" height="20" fill="white" opacity="0.2"/>
-                <rect x="20" y="20" width="20" height="20" fill="white" opacity="0.2"/>
+              <pattern
+                id="squares"
+                x="0"
+                y="0"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  fill="white"
+                  opacity="0.2"
+                />
+                <rect
+                  x="20"
+                  y="20"
+                  width="20"
+                  height="20"
+                  fill="white"
+                  opacity="0.2"
+                />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#squares)"/>
+            <rect width="100%" height="100%" fill="url(#squares)" />
           </svg>
         </div>
       </div>
 
       {/* Copyright section */}
-      <div className="bg-gray-100 py-4">
+      <div className="bg-#eeebf0 py-4">
         <div className="max-w-6xl mx-auto px-8 text-center">
-          <p className="text-sm text-gray-600">
-            Copyright © 2023 Square Card. All Rights Reserved.
+          <p className="text-sm text-gray-600 font-bold">
+            Copyright © 2025 Square Card. All Rights Reserved.
           </p>
         </div>
       </div>
